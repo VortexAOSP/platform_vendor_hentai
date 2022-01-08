@@ -78,6 +78,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libpowerstatshaldataprovider
 
+# Black theme
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay
+
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
 
