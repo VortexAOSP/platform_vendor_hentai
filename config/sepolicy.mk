@@ -16,7 +16,7 @@
 
 # Include hentai sepolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    vendor/hentai/sepolicy/private
+    vendor/vortex/sepolicy/private
 
 # Include common pixel sepolicy
 BOARD_SEPOLICY_DIRS += \
