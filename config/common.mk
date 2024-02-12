@@ -64,6 +64,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     media.mediadrmservice.enable=true
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease \
+    SettingsGoogle \
+    SystemUIGoogle
+
+# SystemUI
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.systemuicompilerfilter=speed
+ 
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
 
