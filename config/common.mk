@@ -93,6 +93,12 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # SystemUI
 PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
+
+# Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
+# on supported devices with Deep Press input classifier HALs and models
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.input.video_enabled=false
+    
  
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
