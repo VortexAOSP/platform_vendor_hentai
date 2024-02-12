@@ -70,7 +70,11 @@ TARGET_FACE_UNLOCK_SUPPORTED ?= true
 
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
-    ParanoidSense
+    ParanoidSense \
+    libFaceDetectCA \
+    libMegviiUnlock \
+    libMegviiUnlock-jni-1.2 \
+    libmegface_faceunlock
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.face.sense_service=true
@@ -80,6 +84,16 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease \
+    SettingsGoogle \
+    SystemUIGoogle
+
+# SystemUI
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.systemuicompilerfilter=speed
+ 
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
 
