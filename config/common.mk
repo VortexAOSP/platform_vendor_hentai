@@ -84,6 +84,11 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
+# VortexThemePicker
+PRODUCT_PACKAGES += \
+    StatixThemePicker \
+    StatixColorStub
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease \
@@ -98,7 +103,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # on supported devices with Deep Press input classifier HALs and models
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.input.video_enabled=false
-    
+
  
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
