@@ -74,11 +74,6 @@
     <!-- Package name for the device provisioning package. -->
     <string name="config_deviceProvisioningPackage" translatable="false">com.google.android.apps.work.oobconfig</string>
 
-    <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
-         handle wallpaper cropping.
-    -->
-    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
-
     <!-- Component names of the services which will keep critical code path warm -->
     <string-array name="config_keep_warming_services" translatable="false">
         <item>com.google.android.GoogleCamera/com.google.android.apps.camera.prewarm.NoOpPrewarmService</item>

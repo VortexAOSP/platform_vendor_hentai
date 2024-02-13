@@ -86,8 +86,13 @@ endif
 
 # VortexThemePicker
 PRODUCT_PACKAGES += \
+    WallpaperPicker \
+    WallpaperPicker2 \
+    WallpaperCropper \
+    ThemePicker \
+    WallpaperPicker \
+    WallpaperPicker2 \
     StatixThemePicker \
-    StatixColorStub
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -131,6 +136,9 @@ $(call inherit-product, vendor/vortex/config/fonts.mk)
 
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/vortex/config/rro_overlays.mk)
+
+# Inherit from overlays config
+$(call inherit-product, vendor/vortex/config/overlay.mk)
 
 # Inherit from sepolicy config
 $(call inherit-product, vendor/vortex/config/sepolicy.mk)
