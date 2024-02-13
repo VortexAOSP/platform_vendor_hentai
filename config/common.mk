@@ -93,6 +93,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # SystemUI
 PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
+
+# libpowerstatshaldataprovider
+PRODUCT_PACKAGES += \
+    libpowerstatshaldataprovider
  
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
