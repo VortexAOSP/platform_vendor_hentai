@@ -77,7 +77,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # libpowerstatshaldataprovider
 PRODUCT_PACKAGES += \
     libpowerstatshaldataprovider
- 
+
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
 

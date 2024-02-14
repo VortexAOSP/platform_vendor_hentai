@@ -30,3 +30,7 @@ $(call inherit-product-if-exists, vendor/vortex/build/target/product/security/he
 PRODUCT_HOST_PACKAGES += \
     sign_target_files_apks \
     ota_from_target_files
+
+# VortexAOSP version
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.vortex.version=$(PLATFORM_VORTEX_RELEASE)
