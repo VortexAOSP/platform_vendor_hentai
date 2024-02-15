@@ -24,7 +24,7 @@ MAINLINE_INCLUDE_UWB_MODULE ?= true
 MAINLINE_INCLUDE_WIFI_MODULE ?= true
 
 # Networkstack certificate
-PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/hentai/apex/certificates
+PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/vortex/apex/certificates
 
 # Prebuilt module SDKs require prebuilt modules to work, and currently
 # prebuilt modules are only provided for com.google.android.xxx.
@@ -60,7 +60,7 @@ endif
 
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/hentai/apex
+    vendor/vortex/apex
 
 # ModuleMetadata
 PRODUCT_PACKAGES += \
