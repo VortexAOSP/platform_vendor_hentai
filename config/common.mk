@@ -65,37 +65,37 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.mediadrmservice.enable=true
 
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/hentai/overlay
+    vendor/vortex/overlay
 
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
 
 # Inherit from apex config
-$(call inherit-product, vendor/hentai/config/apex.mk)
+$(call inherit-product, vendor/vortex/config/apex.mk)
 
 # Inherit from audio config
-$(call inherit-product, vendor/hentai/config/audio.mk)
+$(call inherit-product, vendor/vortex/config/audio.mk)
 
 # Inherit from bootanimation config
-$(call inherit-product, vendor/hentai/config/bootanimation.mk)
+$(call inherit-product, vendor/vortex/config/bootanimation.mk)
 
 # Inherit from gfonts config
-$(call inherit-product, vendor/hentai/config/gfonts.mk)
+$(call inherit-product, vendor/vortex/config/gfonts.mk)
 
 # Inherit from packages config
-$(call inherit-product, vendor/hentai/config/packages.mk)
+$(call inherit-product, vendor/vortex/config/packages.mk)
 
 # Inherit from fonts config
-$(call inherit-product, vendor/hentai/config/fonts.mk)
+$(call inherit-product, vendor/vortex/config/fonts.mk)
 
 # Inherit from rro_overlays config
-$(call inherit-product, vendor/hentai/config/rro_overlays.mk)
+$(call inherit-product, vendor/vortex/config/rro_overlays.mk)
 
 # Inherit from sepolicy config
-$(call inherit-product, vendor/hentai/config/sepolicy.mk)
+$(call inherit-product, vendor/vortex/config/sepolicy.mk)
 
 # Inherit from our versioning
-$(call inherit-product, vendor/hentai/config/versioning.mk)
+$(call inherit-product, vendor/vortex/config/versioning.mk)
 
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
