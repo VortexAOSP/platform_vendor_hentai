@@ -133,3 +133,6 @@ $(call inherit-product, vendor/vortex/config/versioning.mk)
 
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
+
+# Inherit from Pixel-Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
