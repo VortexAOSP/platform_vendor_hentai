@@ -85,8 +85,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/vortex/config/device_framework_matrix.xml
+
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit from apex config
 $(call inherit-product, vendor/vortex/config/apex.mk)
