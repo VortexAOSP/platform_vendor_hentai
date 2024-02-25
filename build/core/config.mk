@@ -15,3 +15,11 @@
 
 # Rules for QCOM targets
 include $(TOPDIR)vendor/vortex/build/core/qcom_target.mk
+
+ifneq ($(wildcard device/vortex/sepolicy/common/sepolicy.mk),)
+## We need to be sure the global selinux policies are included
+## last, to avoid accidental resetting by device configs
+ifeq ($(TARGET_BUILD_LINEAGEHW), true)
+$(eval include device/vortex/sepolicy/common/sepolicy.mk)
+endif
+endif

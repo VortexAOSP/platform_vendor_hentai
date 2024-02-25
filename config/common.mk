@@ -89,6 +89,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_COPY_FILES += \
     vendor/vortex/config/permissions/vortex-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/vortex-sysconfig.xml
 
+ifeq ($(TARGET_BUILD_LINEAGEHW), true)
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/vortex/config/device_framework_matrix.xml
 
 # LineageHW permission
@@ -99,6 +100,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/vortex/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
     vendor/vortex/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml
+endif
 
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
