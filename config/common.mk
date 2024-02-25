@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
 
+# VortexAOSP specific broadcast actions whitelist
+PRODUCT_COPY_FILES += \
+    vendor/vortex/config/permissions/vortex-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/vortex-sysconfig.xml
+
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/vortex/config/device_framework_matrix.xml
 
 # LineageHW permission
