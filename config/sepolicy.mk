@@ -19,13 +19,16 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     vendor/vortex/sepolicy/private
 
 # Include common pixel sepolicy
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+	hardware/google/pixel-sepolicy/turbo_adapter/public
+
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+	hardware/google/pixel-sepolicy/turbo_adapter/private
+
 BOARD_SEPOLICY_DIRS += \
-	hardware/google/pixel-sepolicy/flipendo \
-	hardware/google/pixel-sepolicy/turbo_adapter
+	hardware/google/pixel-sepolicy/flipendo
 
 # Lineage Sepolicy
 ifeq ($(TARGET_BUILD_LINEAGEHW), true)
 $(eval include device/vortex/sepolicy/common/sepolicy.mk)
 endif
-
-
