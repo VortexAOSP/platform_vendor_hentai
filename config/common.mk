@@ -150,4 +150,4 @@ $(call inherit-product, vendor/vortex/config/versioning.mk)
 $(call inherit-product, vendor/gms/gms_full.mk)
 
 # Inherit from Pixel-Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+# $(call inherit-product, vendor/pixel-framework/config.mk)
