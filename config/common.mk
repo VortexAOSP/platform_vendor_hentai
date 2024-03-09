@@ -85,7 +85,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
 
 # Inherit from animations config
-$(call inherit-product, vendor/hentai/config/animations.mk)
+$(call inherit-product, vendor/vortex/config/animations.mk)
 
 # Inherit from apex config
 $(call inherit-product, vendor/vortex/config/apex.mk)
