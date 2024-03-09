@@ -116,9 +116,6 @@ endif
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Inherit from animations config
 $(call inherit-product, vendor/vortex/config/animations.mk)
 
