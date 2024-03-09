@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+# Copyright (C) 2024 The hentaiOS Project and its Proprietors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,10 +19,15 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     vendor/vortex/sepolicy/private
 
 # Include common pixel sepolicy
-BOARD_SEPOLICY_DIRS += \
-	hardware/google/pixel-sepolicy/flipendo \
-	hardware/google/pixel-sepolicy/turbo_adapter
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+	hardware/google/pixel-sepolicy/turbo_adapter/public
 
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+	hardware/google/pixel-sepolicy/turbo_adapter/private
+
+BOARD_SEPOLICY_DIRS += \
+	hardware/google/pixel-sepolicy/flipendo
+	
 # Lineage Sepolicy
 ifeq ($(TARGET_BUILD_LINEAGEHW), true)
 $(eval include device/vortex/sepolicy/common/sepolicy.mk)

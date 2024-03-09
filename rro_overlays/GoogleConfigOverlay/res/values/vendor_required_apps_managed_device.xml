@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+** Copyright (C) 2024 The hentaiOS Project and its Proprietors.
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -43,5 +43,6 @@
         <item>com.google.android.projection.gearhead</item>
         <item>com.google.android.apps.accessibility.voiceaccess</item>
         <item>com.google.android.apps.tycho</item>
+        <item>com.google.android.apps.internal.betterbug</item>
     </string-array>
 </resources>

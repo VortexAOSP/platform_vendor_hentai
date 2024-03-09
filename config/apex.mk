@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+# Copyright (C) 2024 The hentaiOS Project and its Proprietors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# FIXME -- DeviceLock ModulePrebuilt is only planned to be released for QPR2
-DISABLE_DEXPREOPT_CHECK := true
+# Setup build characteristics
+PRODUCT_INCLUDE_TAGS := com.android.mainline mainline_module_prebuilt_monthly_release
 
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true

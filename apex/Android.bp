@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2023 Raphielscape LLC.
+// Copyright (C) 2024 The hentaiOS Project and its Proprietors.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -93,6 +93,9 @@ art_prebuilt_apex_set {
     owner: "google",
     src: "com.google.android.art.apex",
     overrides: [
+        "libsigchain",
+        "libnativeloader",
+        "libnativehelper",
         "com.android.art",
         "com.android.art.debug",
     ],
@@ -113,9 +116,6 @@ module_apex_prebuilt {
     owner: "google",
     src: "com.google.android.btservices.apex",
     overrides: ["com.android.btservices"],
-    required: ["android.hardware.bluetooth@1.1",
-               "android.hardware.bluetooth.audio@2.1",
-               "android.hardware.bluetooth.audio-V2-ndk"],
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
@@ -190,8 +190,8 @@ module_apex_prebuilt {
             prefer: false,
         },
     },
-    //exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
-    //exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
+    exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
 }
 
 // Google com.google.android.extservices
