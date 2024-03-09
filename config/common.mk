@@ -120,7 +120,7 @@ $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit from animations config
-$(call inherit-product, vendor/hentai/config/animations.mk)
+$(call inherit-product, vendor/vortex/config/animations.mk)
 
 # Inherit from apex config
 $(call inherit-product, vendor/vortex/config/apex.mk)
