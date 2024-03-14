@@ -96,6 +96,9 @@ $(call inherit-product, vendor/vortex/config/audio.mk)
 # Inherit from bootanimation config
 $(call inherit-product, vendor/vortex/config/bootanimation.mk)
 
+# Inherit from clocks config
+$(call inherit-product-if-exists, vendor/vortex/config/clocks.mk)
+
 # Inherit from gfonts config
 $(call inherit-product, vendor/vortex/config/gfonts.mk)
 
