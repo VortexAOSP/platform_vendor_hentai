@@ -81,9 +81,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/vortex/overlay
 
-# Inherit from lewdboratory config
-$(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
-
 # Inherit from animations config
 $(call inherit-product, vendor/vortex/config/animations.mk)
 
